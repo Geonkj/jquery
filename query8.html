@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+	<script src="E:\project\jquery.min.js"></script>
+	<style>
+	#first{background-color: red;}#second{background-color: green;}#third{background-color: blue;}
+	</style>
+	<script>
+	$(document).ready(function(){
+		$("#btn").click(function(){
+			$("p").css('fontSize','+=20px');
+			$("p").css('background-color','yellow');
+		});
+	});
+	</script>
+
+</head>
+<body>
+	<h3>This is a heading</h3>
+	<p id="first">This is a paragraph</p>
+	<p id="second">This is a paragraph</p>
+	<p id="third">This is a paragraph</p>
+	<p id="fourth">This is a paragraph</p>
+	<input id="btn" type="submit" value="Set multiple styles for p">
+
+</body>
+</html>
